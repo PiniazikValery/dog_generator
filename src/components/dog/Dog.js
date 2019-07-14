@@ -15,7 +15,6 @@ function _Dog(props) {
     const age = avaliableAges.includes(props.age) ? props.age : avaliableAges[0];
     return (
         <div>
-            {age}
             <Dog>
                 <Head onClick={props.onHeadClick} age={age}>
                     <Tongue />
