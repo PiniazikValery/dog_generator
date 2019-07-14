@@ -7,7 +7,9 @@ const oldDogColor = (degreeOfDark = 0) => `rgb(${168 - (168 * (degreeOfDark / 10
 export const Dog = styled.div`
     position: relative;
     width: 150px;
-    margin: 20px auto;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;
 `
 
 export const Head = styled.div`

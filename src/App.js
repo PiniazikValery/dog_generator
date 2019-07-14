@@ -1,13 +1,10 @@
 import React from 'react';
-import { Dog } from './components/dog'
+import { Lawn } from './components/lawn';
 
 function App() {
   return (
-    <div>
-      <Dog age="old" />
-      <Dog age="young" />
-      <Dog age="adult" />
-    </div>
+    <Lawn>
+    </Lawn>
   )
 }
 
