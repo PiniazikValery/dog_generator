@@ -7,9 +7,10 @@ import {
     InnerBody, LeftHindLeg, LeftHindPaw, RightHindLeg,
     RightHindPaw, LeftFrontLeg, RightFrontLeg, LeftFrontPaw,
     RightFrontPaw
-} from './DogComponents'
+} from './DogComponents';
+import dogsConfig from '../../config/dogsConfig.json';
 
-const avaliableAges = ['young', 'adult', 'old'];
+const avaliableAges = dogsConfig.avaliableAges;
 
 function _Dog(props) {
     const age = avaliableAges.includes(props.age) ? props.age : avaliableAges[0];
