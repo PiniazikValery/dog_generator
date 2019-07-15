@@ -19,6 +19,11 @@ const AddDogButton = styled.button`
   }
 `
 
+const Description = styled.h4`
+  color:grey;
+  margin-top:20px;
+`
+
 function App() {
   const [dogs, addDog] = useState([]);
   const [dogsName, setName] = useState('');
@@ -49,6 +54,10 @@ function App() {
         {dogsConfig.avaliableAges.map((age, index) => <option key={index}>{age}</option>)}
       </DogAgesSelect>
       <AddDogButton disabled={dogsName === ''} onClick={onAddDogClick}>Add dog</AddDogButton>
+      <Description>
+        * To make dog barking click to his head <br /> <br />
+        * To get dog`s name click to his body
+      </Description>
     </div>
   )
 }
