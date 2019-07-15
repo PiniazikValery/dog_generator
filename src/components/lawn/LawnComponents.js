@@ -9,6 +9,7 @@ export const Sky = styled.div`
 export const Background = styled.div`
     width:100%;
     height:100%;   
+    margin-bottom:10px;
 `
 
 export const Ground = styled.div`
